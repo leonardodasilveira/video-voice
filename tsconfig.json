@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                     // Allows modern JS features
+    "module": "ESNext",                     // Enables ESM syntax (import/export)
+    "moduleResolution": "node",             // Required for ESM + node_modules resolution
+    "rootDir": "./src",                     // Source files go here
+    "outDir": "./dist",                     // Compiled files (if using tsc)
+    "esModuleInterop": true,                // Helps with CommonJS compatibility
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,                         // Enables all strict type checks
+    "skipLibCheck": true,                   // Skips checking type declarations
+    "resolveJsonModule": true,              // Allows importing .json files
+    "noEmit": true                          // Don't emit compiled files (ts-node handles it)
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
